@@ -21,7 +21,7 @@ HEX Keys for the main colours used in the project
 
 PRIMARY
 -------
-E52520 - Red
+E51C20 - Red
 0075FF - Royal Blue
 383838 - Grey
 
@@ -73,21 +73,22 @@ h3 {
 h4 {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 1.5em;
 }
 
 h5 {
   font-weight: 400;
-}
-
-@media(min-width:34em){
-  h5 {
-    font-size: 1.2em;
-  }
+  font-size: 1.5em;
+  margin: 0 0 1em 0;
 }
 
 p {
-  font-size: 1em;
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
+
+@media(min-width:34em){
 
 a {
   font-weight: 400;
@@ -100,9 +101,6 @@ label{
 }
 
 @media(min-width:48em){
-  h1 {
-    font-size:6em;
-  }
 }
 
 .container, .container-fluid{
@@ -258,7 +256,6 @@ BANNER
   background-color: #383838;
   min-height: 30em;
   padding-top: 5.5em; /*for Bootstrap fixed navbar*/
-  /*height: 100vh;*/
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -303,7 +300,7 @@ TAGLINE
 .tagline{
   background-color: #FFF;
   position: relative;
-  padding: 1em;
+  padding: 3em 1em 1em 1em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -331,17 +328,35 @@ TAGLINE
   color: #383838;
   font-weight:600;
   font-size: 1.5em;
-  padding: 0.8em;
+  padding-top: 0.8em;
 
   display: inline-flex;
   vertical-align: middle;
-  margin-bottom: 2em;
+  /*margin-bottom: 2em;*/
 }
 
-.tagline a:hover{
-  color: #fff;
-  border: 0.3em solid #fff;
+.btn-grp {
+  display: block;
+}
+
+.btn-grp:hover {
+  color: #E51C20;
   text-decoration: none;
+}
+
+/*.tagline a:hover{
+  color: #E51C20;
+  text-decoration: none;
+}*/
+
+/*
+.tagline span:hover {
+  color: #E51C20;
+  text-decoration: none;
+}*/
+
+.tagline i {
+  display: block;
 }
 
 @media(min-width:48em){
@@ -353,9 +368,21 @@ TAGLINE
 /*---------------------------------------
 WORK
 ---------------------------------------*/
+#work h4,#work h5,#work p,#work a {
+  color: #fff;
+  padding: 0 2em 0 2em;
+}
+
+#work .row div:first-child {
+  padding-bottom: 2em;
+}
+
+.work1,.work2,.work3 {
+  padding: 2em 0 2em 0;
+}
 
 .work1 {
-  background-color: #E52520;
+  background-color: #E51C20;
 }
 
 .work2 {
@@ -367,7 +394,14 @@ WORK
 }
 
 @media(min-width:48em){
+  #work h4,#work h5,#work p,#work a {
+    text-align: left;
+    padding: 0;
+  }
 
+  #work h4 {
+    margin: 0 0 0.2em 0;
+  }
 }
 
 @media(min-width:62em){
@@ -378,6 +412,18 @@ WORK
 /*---------------------------------------
 PHOTOS
 ---------------------------------------*/
+.photos {
+  background-image: url("../img/Photos/SQ/2016_NZ_Milford_Sound_1920x1280.jpg");
+  background-color: #FFF;
+  /*min-height: 30em;*/
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
 
 @media(min-width:62em){
 
