@@ -2,16 +2,16 @@
 
 /*Here are the selectors used in BS3, if you want to stay consistent:
 
-@media(max-width:767px){}
-@media(min-width:768px){}
-@media(min-width:992px){}
-@media(min-width:1200px){}
+@media(max-width:767px){} xs
+@media(min-width:768px){} sm
+@media(min-width:992px){} md
+@media(min-width:1200px){} lg
 Here are the selectors used in BS4. There is no "lowest" setting in BS4 because "extra small" is the default. I.e. you would first code the XS size and then have these media overrides afterwards.
 
-@media(min-width:34em){}
-@media(min-width:48em){}
-@media(min-width:62em){}
-@media(min-width:75em){}
+@media(min-width:34em){} xs
+@media(min-width:48em){} sm
+@media(min-width:62em){} md
+@media(min-width:75em){} lg
 Update 2015-12-08: This is still accurate as of version 3.3.6 and 4.0.0a2*/
 
 /*---------------------------------------
@@ -71,9 +71,12 @@ h3 {
 }
 
 h4 {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 h5 {
+  font-weight: 400;
 }
 
 @media(min-width:34em){
@@ -350,6 +353,22 @@ TAGLINE
 /*---------------------------------------
 WORK
 ---------------------------------------*/
+
+.work1 {
+  background-color: #E52520;
+}
+
+.work2 {
+  background-color: #9E1320;
+}
+
+.work3 {
+  background-color: #0075FF;
+}
+
+@media(min-width:48em){
+
+}
 
 @media(min-width:62em){
 
