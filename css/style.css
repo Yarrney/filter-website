@@ -131,15 +131,13 @@ p {
   display:block;
 }
 
-.sm-nobreak{
-  white-space:nowrap;
-}
-
 @media(min-width:34em){
-
+  /*.sm-nobreak{
+    white-space:nowrap;
+  }*/
 }
 
-@media(min-width:62em){
+@media(min-width:48em){
   .line {
     display:inline-block;
   }
@@ -432,6 +430,10 @@ div.btn:hover {
 /*---------------------------------------
 PHOTOS
 ---------------------------------------*/
+#photos.section {
+  padding-bottom: 2em;
+}
+
 #photos .banner {
   background-image: url("../img/Photos/SQ/2016_NZ_Milford_Sound_1920x1280.jpg");
   background-color: #FFF;
@@ -451,34 +453,68 @@ PHOTOS
 /*---------------------------------------
 FOOTER
 ---------------------------------------*/
-#footer {
-  height: 30em;
+#footer img {
+  display: inline-block;
+}
+
+.logo-text {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #footer i {
   color: #E51C20;
   padding-right: 0.5em;
   font-size: 1.5em;
+  vertical-align: middle;
 }
 
 #footer h2, #footer h3 {
-  line-height: 0.5em;
+  text-align: center;
+  margin-top: 0.1em;
 }
 
-.contact {
-  display:inline-block;
+#footer a {
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: left;
+  line-height: 1em;
+  padding-right: 1em;
+  color: #383838;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contact img {
-  float: left;
+#footer a:last-child {
+  padding-right: 0;
 }
 
-@media(min-width:48em){
+#footer a:hover {
+  text-decoration: none;
+  color: #E51C20;
+}
+
+.left-center {
+  /*max-width: 50%;*/
+  display: inline-block;
+  margin: 2em 0 2em 2em;
+}
+
+/* CUSTOM SIZE FOR TEXT BREAK */
+@media(min-width: 31.7em){
   #footer h2, #footer h3 {
     text-align: left;
   }
 }
 
-@media(min-width:62em){
+@media(min-width:48em){
+  #footer a {
+    white-space:nowrap;
+  }
 
+  .left-center {
+    max-width: 100%;
+    display: inline-block;
+    margin-top: 2em;
+  }
 }
