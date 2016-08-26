@@ -90,16 +90,16 @@ p {
 
 @media(min-width:34em){
 
-a {
-  font-weight: 400;
-  text-decoration:none;
-}
+  a {
+    font-weight: 400;
+    text-decoration:none;
+  }
 
-label{
-  font-size: 0.8em;
-  font-weight: 300;
+  label{
+    font-size: 0.8em;
+    font-weight: 300;
+  }
 }
-
 @media(min-width:48em){
 }
 
@@ -129,6 +129,10 @@ label{
 
 .line {
   display:block;
+}
+
+.sm-nobreak{
+  white-space:nowrap;
 }
 
 @media(min-width:34em){
@@ -255,6 +259,7 @@ BANNER
   background-image: url("../img/Photos/SQ/2016_NZ_Lake_Te_Anau_Sunrise_1920x848.jpg");
   background-color: #383838;
   min-height: 30em;
+  margin-top: 5.5em;
   padding-top: 5.5em; /*for Bootstrap fixed navbar*/
   position: relative;
   background-position: center;
@@ -315,7 +320,7 @@ TAGLINE
   line-height: 1.3em;
   display: inline-block;
   border: none;
-  padding: 0 3em 0 3em;
+  padding: 0 3em 1em 3em;
 }
 
 @media(min-width:34em){
@@ -328,35 +333,17 @@ TAGLINE
   color: #383838;
   font-weight:600;
   font-size: 1.5em;
-  padding-top: 0.8em;
-
-  display: inline-flex;
-  vertical-align: middle;
-  /*margin-bottom: 2em;*/
+  line-height: 1.8em;
 }
 
-.btn-grp {
-  display: block;
-}
-
-.btn-grp:hover {
+.tagline a:hover{
   color: #E51C20;
   text-decoration: none;
 }
-
-/*.tagline a:hover{
-  color: #E51C20;
-  text-decoration: none;
-}*/
-
-/*
-.tagline span:hover {
-  color: #E51C20;
-  text-decoration: none;
-}*/
 
 .tagline i {
-  display: block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
 }
 
 @media(min-width:48em){
@@ -377,6 +364,17 @@ WORK
   padding-bottom: 2em;
 }
 
+#work a {
+  font-size: 1.2em;
+  padding: 0 1em 0 1em;
+}
+
+#work i {
+  font-size: 1.5em;
+  padding-left: 0.2em;
+  vertical-align: -7%;
+}
+
 .work1,.work2,.work3 {
   padding: 2em 0 2em 0;
 }
@@ -393,10 +391,32 @@ WORK
   background-color: #0075FF;
 }
 
+.btn {
+  background-color: #111;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  padding: 1em;
+  margin: 2em 0 1em 0;
+}
+
+.btn a:hover {
+  text-decoration: none;
+}
+
+div.btn:hover {
+  background: #383838;
+  background: rgba(0,0,0,0.3);
+}
+
 @media(min-width:48em){
   #work h4,#work h5,#work p,#work a {
     text-align: left;
     padding: 0;
+  }
+
+  .btn {
+    display: inline-block;
+    float: left;
   }
 
   #work h4 {
@@ -412,17 +432,15 @@ WORK
 /*---------------------------------------
 PHOTOS
 ---------------------------------------*/
-.photos {
+#photos .banner {
   background-image: url("../img/Photos/SQ/2016_NZ_Milford_Sound_1920x1280.jpg");
   background-color: #FFF;
-  /*min-height: 30em;*/
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  margin: 0;
+  padding 0;
+}
+
+#photos .container-fluid {
+  padding-top: 0;
 }
 
 @media(min-width:62em){
@@ -433,6 +451,33 @@ PHOTOS
 /*---------------------------------------
 FOOTER
 ---------------------------------------*/
+#footer {
+  height: 30em;
+}
+
+#footer i {
+  color: #E51C20;
+  padding-right: 0.5em;
+  font-size: 1.5em;
+}
+
+#footer h2, #footer h3 {
+  line-height: 0.5em;
+}
+
+.contact {
+  display:inline-block;
+}
+
+.contact img {
+  float: left;
+}
+
+@media(min-width:48em){
+  #footer h2, #footer h3 {
+    text-align: left;
+  }
+}
 
 @media(min-width:62em){
 
