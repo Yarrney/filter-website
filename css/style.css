@@ -66,7 +66,6 @@ h2 {
 
 h3 {
   font-weight: 300;
-  font-style: italic;
   font-size: 2em;
 }
 
@@ -88,12 +87,32 @@ p {
   line-height: 1.5em;
 }
 
+a {
+  font-weight: 400;
+  text-decoration:none;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #0075FF;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #9CEDFF;
+}
+
+.img-responsive {
+  display: inline-block;
+}
+
 @media(min-width:34em){
 
-  a {
+  /*a {
     font-weight: 400;
     text-decoration:none;
-  }
+    font-size: 1.3em;
+    line-height: 1.5em;
+    color: #0075FF;
+  }*/
 
   label{
     font-size: 0.8em;
@@ -230,18 +249,8 @@ HEADER
 
 @media(min-width:48em){
 
-  .navbar-nav {
-    /*padding: 1em 0 1em 0;
-    margin-right: 1em;*/
-  }
-
-  .navbar-collapse li {
-    /*padding: 0 0.5em 0 0.5em;*/
-  }
-
   .navbar-default .navbar-collapse a {
     border-top: none;
-    /*padding: 0.3em 0.5em 0.3em 0.5em;*/
   }
 
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -456,6 +465,45 @@ PHOTOS
 
 }
 
+/*---------------------------------------
+PHOTOS
+---------------------------------------*/
+#about {
+  margin-top: 7.5em; /* To account for fixed header*/
+  margin-bottom: 2em;
+}
+
+#about h3 {
+  margin-top: 0.2em;
+  margin-bottom: 0.4em;
+}
+
+#about h3:first-of-type {
+  margin-top: 1em;
+}
+
+#about h5 {
+  margin-top: 2em;
+}
+
+#about h5:first-of-type {
+  margin-top: 0;
+}
+
+#about p {
+  margin: 0;
+  padding-top: 0.3em;
+  padding-bottom: 1em;
+}
+
+#about div p:first-of-type {
+  margin-top: 2em;
+  padding-bottom: 0;
+}
+
+#about a {
+  margin-top: 1.5em;
+}
 
 /*---------------------------------------
 FOOTER
