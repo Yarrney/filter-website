@@ -470,7 +470,7 @@ PHOTOS
 ---------------------------------------*/
 #about {
   margin-top: 7.5em; /* To account for fixed header*/
-  margin-bottom: 2em;
+  margin-bottom: 5em;
 }
 
 #about h3 {
@@ -503,6 +503,11 @@ PHOTOS
 
 #about a {
   margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.about-item {
+  margin-bottom: 5em;
 }
 
 /*---------------------------------------
