@@ -405,6 +405,10 @@ WORK
   background-color: #0075FF;
 }
 
+.work-image div:first-child {
+  margin-bottom: 2em;
+}
+
 .btn {
   background-color: #111;
   background: rgba(0, 0, 0, 0.5);
@@ -436,6 +440,13 @@ div.btn:hover {
   #work h4 {
     margin: 0 0 0.2em 0;
   }
+
+  .work-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 @media(min-width:62em){
