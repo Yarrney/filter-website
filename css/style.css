@@ -263,6 +263,14 @@ HEADER
     background-color:#FFF;
   }
 
+  .navbar-brand {
+    padding-left: 2em;
+  }
+
+.navbar-right {
+  padding-right: 2em;
+}
+
 }
 
 @media(min-width:62em){
