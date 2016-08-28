@@ -294,6 +294,7 @@ BANNER
 .banner h2 {
   color: #fff;
   line-height: 1.3em;
+  font-weight: 300;
 }
 
 .banner h3 {
