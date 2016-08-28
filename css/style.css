@@ -156,6 +156,11 @@ a:hover {
     float: none;
 }
 
+.anchor {
+    padding-top: 5.5em;
+    margin-top: -5.5em;
+}
+
 @media(min-width:34em){
   /*.sm-nobreak{
     white-space:nowrap;
@@ -487,7 +492,6 @@ PHOTOS
 #photos h3 {
   margin-top: -0.5em;
 }
-
 
 @media(min-width: 29.3em){
   #photos .logo-text {
