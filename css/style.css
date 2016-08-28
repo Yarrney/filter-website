@@ -131,6 +131,12 @@ p {
   display:block;
 }
 
+.pull-middle {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 @media(min-width:34em){
   /*.sm-nobreak{
     white-space:nowrap;
@@ -152,7 +158,7 @@ HEADER
 }
 
 .navbar-brand {
-  padding-left: 2em;
+  padding-left: 0.5em;
   padding-top: 0.8em;
 }
 
@@ -166,6 +172,8 @@ HEADER
   border: none;
   box-shadow: none;
   padding-top: 1.1em;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .navbar > .container-fluid {
@@ -175,6 +183,7 @@ HEADER
 .navbar-default .navbar-toggle .icon-bar{
   background-color: #383838;
   width: 2.7em;
+  padding-left: 0;
 }
 
 .navbar-toggle .icon-bar+.icon-bar{
@@ -211,6 +220,12 @@ HEADER
 
 .navbar-default .navbar-collapse a {
   font-size: 0.8em;
+}
+
+@media(min-width:22em){
+  .navbar-brand {
+    padding-left: 2em;
+  }
 }
 
 @media(min-width:48em){
@@ -323,6 +338,7 @@ TAGLINE
   font-weight:600;
   font-size: 1.5em;
   line-height: 1.8em;
+  text-decoration: none;
 }
 
 .tagline a:hover{
