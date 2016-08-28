@@ -484,8 +484,10 @@ PHOTOS
   padding-top: 0;
 }
 
-@media(min-width:62em){
-
+@media(min-width: 29.3em){
+  #photos .logo-text {
+    text-align: left;
+  }
 }
 
 /*---------------------------------------
