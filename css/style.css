@@ -484,10 +484,20 @@ PHOTOS
   padding-top: 0;
 }
 
+#photos h3 {
+  margin-top: -0.5em;
+}
+
+
 @media(min-width: 29.3em){
   #photos .logo-text {
     text-align: left;
   }
+
+  #photos h3 {
+    margin-top: -1em;
+  }
+
 }
 
 /*---------------------------------------
