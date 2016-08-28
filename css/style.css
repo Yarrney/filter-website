@@ -553,6 +553,13 @@ PHOTOS
 
 .about-item {
   margin-bottom: 5em;
+  margin-top: 3em;
+}
+
+@media(min-width:48em){
+  .about-item {
+    margin-top: 0em;
+  }
 }
 
 /*---------------------------------------
