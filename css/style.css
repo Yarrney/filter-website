@@ -447,6 +447,13 @@ div.btn:hover {
     justify-content: center;
   }
 
+  .work-image div:first-child {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+
 }
 
 @media(min-width:62em){
