@@ -475,7 +475,7 @@ div.btn:hover {
 PHOTOS
 ---------------------------------------*/
 #photos.section {
-  padding-bottom: 2em;
+  padding-bottom: 0;
 }
 
 #photos .banner {
@@ -545,6 +545,12 @@ PHOTOS
   margin-bottom: 2em;
 }
 
+#about a>i {
+  color: #E51C20;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
 .about-item {
   margin-bottom: 5em;
 }
@@ -558,13 +564,6 @@ FOOTER
 
 .logo-text {
   display: inline-block;
-  vertical-align: middle;
-}
-
-#footer i {
-  color: #E51C20;
-  padding-right: 0.5em;
-  font-size: 1.5em;
   vertical-align: middle;
 }
 
@@ -591,6 +590,13 @@ FOOTER
 #footer a:hover {
   text-decoration: none;
   color: #E51C20;
+}
+
+#footer i {
+  color: #E51C20;
+  padding-right: 0.5em;
+  font-size: 1.5em;
+  vertical-align: middle;
 }
 
 .left-center {
