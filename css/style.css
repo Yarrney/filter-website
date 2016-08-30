@@ -83,14 +83,14 @@ h5 {
 
 p {
   font-weight: 300;
-  font-size: 1.3em;
+  font-size: 1.5em;
   line-height: 1.5em;
 }
 
 a {
   font-weight: 400;
   text-decoration:none;
-  font-size: 1.3em;
+  font-size: 1.5em;
   line-height: 1.5em;
   color: #0075FF;
 }
@@ -308,6 +308,8 @@ BANNER
   color: #fff;
   line-height: 1.3em;
   font-weight: 300;
+  font-size: 2.5em;
+  padding: 0 1em 0 1em;
 }
 
 .banner h3 {
@@ -315,10 +317,23 @@ BANNER
   font-weight: 300;
 }
 
+@media(min-width:34em){
+  .banner h2 {
+    font-size: 3em;
+    padding: 0 2em 0 2em;
+  }
+}
+
 @media(min-width:48em){
   .banner{
     min-height: 30em;
   }
+
+  .banner h2 {
+    font-size: 4em;
+    padding: 0 2em 0 2em;
+  }
+
 }
 
 @media(min-width:62em){
@@ -499,6 +514,11 @@ PHOTOS
 
 #photos h3 {
   margin-top: -0.5em;
+}
+
+#photos .banner h2 {
+  font-size: 2em !important;
+  padding: 0;
 }
 
 @media(min-width: 29.3em){
