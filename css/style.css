@@ -95,6 +95,13 @@ a {
   color: #0075FF;
 }
 
+li {
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: left;
+}
+
 a:hover {
   text-decoration: none;
   color: #9CEDFF;
@@ -130,6 +137,8 @@ a:hover {
   outline:none;
 }
 
+
+
 /* CUSTOM CLASSES/STYLES */
 
 .section {
@@ -156,9 +165,28 @@ a:hover {
     float: none;
 }
 
-.anchor {
-    padding-top: 5.5em;
-    margin-top: -5.5em;
+.image-hide .desktop {
+  display: none;
+}
+
+.nopad {
+  padding: 0;
+}
+
+.nomarg{
+  margin: 0;
+}
+
+.work-banner {
+  background-color: #383838;
+  min-height: 30em;
+  margin-top: 5.5em;
+  padding-top: 5.5em; /*for Bootstrap fixed navbar*/
+  position: relative;
+}
+
+.work-banner img {
+  max-height: 25em;
 }
 
 @media(min-width:34em){
@@ -171,7 +199,24 @@ a:hover {
   .line {
     display:inline-block;
   }
+
+  .work-banner{
+    min-height: 45em;
+  }
+
 }
+
+@media(min-width:62em){
+  .image-hide .desktop {
+    display: inline-block;
+  }
+
+  .image-hide .mobile {
+    display: none;
+  }
+}
+
+
 
 /*---------------------------------------
 HEADER
@@ -280,10 +325,12 @@ HEADER
 /*---------------------------------------
 BANNER
 ---------------------------------------*/
+
 .banner{
   background-image: url("../img/Photos/SQ/2016_NZ_Lake_Te_Anau_Sunrise_1920x848.jpg");
   background-color: #383838;
   min-height: 30em;
+  /*height: 100vh;*/
   margin-top: 5.5em;
   padding-top: 5.5em; /*for Bootstrap fixed navbar*/
   position: relative;
@@ -302,6 +349,11 @@ BANNER
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: -1em;
+}
+
+.banner-title h4, .banner-title h5 {
+  color: #fff;
 }
 
 .banner h2 {
@@ -317,16 +369,26 @@ BANNER
   font-weight: 300;
 }
 
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 @media(min-width:34em){
   .banner h2 {
     font-size: 3em;
     padding: 0 2em 0 2em;
   }
+
+  /*.banner-title {
+    margin-top: -5.5em;
+  }*/
 }
 
 @media(min-width:48em){
   .banner{
-    min-height: 30em;
+    min-height: 45em;
   }
 
   .banner h2 {
@@ -354,15 +416,16 @@ TAGLINE
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  /*bottom: 0;*/
 }
 
 .tagline p {
   font-size: 1.5em;
   text-align: center;
   line-height: 1.3em;
-  display: inline-block;
+  /*display: inline-block;*/
   border: none;
-  padding: 0 3em 1em 3em;
+  padding: 0 1em 1em 1em;
 }
 
 @media(min-width:34em){
@@ -386,6 +449,7 @@ TAGLINE
 
 .tagline i {
   line-height: 0em;
+  padding-top: 0.3em;
   padding-bottom: 0.5em;
 }
 
@@ -393,6 +457,11 @@ TAGLINE
   .tagline a {
     margin: 0 0 1.5em 1em;
   }
+
+  .tagline p {
+    padding: 0 3em 1em 3em;
+  }
+
 }
 
 /*---------------------------------------
@@ -424,6 +493,7 @@ WORK
 
 .work1 {
   background-color: #E51C20;
+  /*margin-top: 5.5em;*/
 }
 
 .work2 {
@@ -435,7 +505,15 @@ WORK
 }
 
 .work-image div:first-child {
-  margin-bottom: 2em;
+  /*margin-bottom: 2em;*/
+}
+
+.work-image {
+  margin: 4em 0 4em 0;
+}
+
+.work-describe {
+  margin: 4em 0 4em 0;
 }
 
 .btn {
@@ -480,7 +558,7 @@ div.btn:hover {
     display:flex;
     justify-content: flex-end;
     margin-right: 2em;
-    margin-bottom: 2em;
+    /*margin-bottom: 2em;*/
   }
 
   .work-image p {
@@ -533,7 +611,7 @@ PHOTOS
 }
 
 /*---------------------------------------
-PHOTOS
+ABOUT
 ---------------------------------------*/
 #about {
   margin-top: 7.5em; /* To account for fixed header*/
@@ -588,6 +666,80 @@ PHOTOS
   .about-item {
     margin-top: 0em;
   }
+}
+
+/*---------------------------------------
+PROJECT (WORK) STYLES
+---------------------------------------*/
+.project-body {
+  margin-top: 5em;
+}
+
+.project-body h4 {
+  text-align: left;
+  text-transform: none;
+  padding-top: 3em;
+  padding-bottom: 0.5em;
+}
+
+.project-body p {
+  text-align: left;
+  padding-bottom: 0.5em;
+}
+
+.project-body li {
+  padding-top: 0.5em;
+}
+
+.caption {
+  font-style: italic;
+  text-align: center !important;
+  font-size: 1em;
+  padding-top: 0.3em;
+}
+
+.project-body img {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.project-body .btn {
+  float: initial;
+  margin: 2em 0 3em 0;
+  background-color: #E51C20;
+}
+
+.project-body .btn a {
+  color: #fff;
+}
+
+.project-body div.btn:hover {
+  background-color: #9E1320;
+}
+
+.see-more {
+  background-color: #0075FF;
+  min-height: 15em;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+
+.see-more .btn {
+  float: inherit;
+  margin: 5em 0 1em 0;
+}
+
+.see-more .btn a {
+  color: #fff;
+}
+
+/*---------------------------------------
+ARNEY
+---------------------------------------*/
+#arney .work-banner {
+  background-color: #E51C20;
 }
 
 /*---------------------------------------
