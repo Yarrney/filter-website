@@ -696,6 +696,18 @@ PROJECT (WORK) STYLES
   padding-bottom: 0.5em;
 }
 
+.project-body a {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #737373;
+}
+
+.project-body a:hover {
+  color: #E51C20;
+
+}
+
 .project-body li {
   padding-top: 0.5em;
 }
@@ -704,12 +716,12 @@ PROJECT (WORK) STYLES
   font-style: italic;
   text-align: center !important;
   font-size: 1em;
-  padding-top: 0.3em;
+  padding-top: 0.2em;
+  padding-bottom: 3em !important;
 }
 
 .project-body img {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 3em;
 }
 
 .project-body .btn {
@@ -720,6 +732,8 @@ PROJECT (WORK) STYLES
 
 .project-body .btn a {
   color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 .project-body div.btn:hover {
